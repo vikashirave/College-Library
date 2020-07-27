@@ -38,17 +38,18 @@
 
     <div class="container my-3">
         <h1> College Library</h1>
-        <form>
+        <hr>
+        <form id="libraryForm">
+            <div class="form-group row">
+                <label for="Name" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Book Name">
+                </div>
+            </div>
             <div class="form-group row">
                 <label for="Author" class="col-sm-2 col-form-label">Author</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="author" placeholder="Author">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
                 </div>
             </div>
             <fieldset class="form-group">
@@ -78,13 +79,15 @@
                     </div>
                 </div>
             </fieldset>
-            
+
             <div class="form-group row">
                 <div class="col-sm-10">
                     <button type="submit" class="btn btn-primary">Add Book</button>
                 </div>
             </div>
+        </hr>
         </form>
+        
 
         <div id="table">
             <h1>Your Books</h1>
@@ -92,9 +95,9 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Type</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -103,18 +106,6 @@
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
                     </tr>
                 </tbody>
             </table>
