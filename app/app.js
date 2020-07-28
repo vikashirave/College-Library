@@ -24,6 +24,22 @@ libraryForm.addEventListener('submit', libraryFormSubmit);
 
 function libraryFormSubmit(e){
     console.log('You have submitted library from !'); 
-    let book = new Book(name,  a)
-    e.preventDefault();
+    let name = documet.getElementById('bookName').value;
+    let author = document.getElementById('author').value;
+    fiction, prgramming, cooking
+
+    let fiction = document.getElementById('fiction');
+    let programming = document.getElementById('programming');
+    let cooking = document.getElementById('cooking');
+    let type;
+
+    if(fiction.checked){
+        type = fiction.value;
+    }
+    else if(programming.checked){
+        type = programming.value;
+    }
+    else if(cooking.checked){
+        type = cooking.value;
+    }
 }
