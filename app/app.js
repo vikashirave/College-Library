@@ -22,6 +22,8 @@ function Display(){
 let libraryForm = document.getElementById('libraryForm');
 libraryForm.addEventListener('submit', libraryFormSubmit);
 
-function libraryFormSubmit(){
+function libraryFormSubmit(e){
     console.log('You have submitted library from !'); 
+    let book = new Book(name,  a)
+    e.preventDefault();
 }
