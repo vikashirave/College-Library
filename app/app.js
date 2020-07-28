@@ -26,12 +26,13 @@ function libraryFormSubmit(e){
     console.log('You have submitted library from !'); 
     let name = documet.getElementById('bookName').value;
     let author = document.getElementById('author').value;
-    fiction, prgramming, cooking
+    let type;
+    //fiction, prgramming, cooking
 
     let fiction = document.getElementById('fiction');
     let programming = document.getElementById('programming');
     let cooking = document.getElementById('cooking');
-    let type;
+    
 
     if(fiction.checked){
         type = fiction.value;
@@ -42,4 +43,9 @@ function libraryFormSubmit(e){
     else if(cooking.checked){
         type = cooking.value;
     }
+
+    let book = new Book(name, author, type);
+    console.log(book);
+    e.preventDefault();
+
 }
