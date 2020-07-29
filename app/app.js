@@ -45,7 +45,7 @@ function libraryFormSubmit(e){
     }
 
     let book = new Book(name, author, type);
-    console.log(book);
+    console.log("book");
     e.preventDefault();
 
 }
